@@ -1,0 +1,26 @@
+#latest-articles {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 20px;
+      color: #343a40;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      .card {
+        width: calc(33.3333% - 20px);
+        margin-bottom: 20px;
+      }
+    }
+  
+  }

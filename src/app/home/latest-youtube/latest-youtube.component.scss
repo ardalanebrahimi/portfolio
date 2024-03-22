@@ -1,0 +1,25 @@
+
+#latest-videos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 20px;
+      color: #343a40;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    
+    .embed-responsive {
+        margin-top: 20px;
+    
+        iframe {
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    
+  }

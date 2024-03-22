@@ -1,0 +1,40 @@
+
+#contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 20px;
+      color: #343a40;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }   
+
+    form {
+        max-width: 600px;
+        margin: auto;
+
+        .form-group {
+        margin-bottom: 20px;
+        }
+
+        .form-label {
+        font-weight: bold;
+        }
+
+        .form-control {
+        width: 100%;
+        }
+
+        textarea {
+        width: 100%;
+        }
+
+        .btn-primary {
+        width: 100%;
+        }
+    }
+  }
