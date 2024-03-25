@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ArticlesComponent } from './articles/articles.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: 'about', component: AboutComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'articles', component: ArticlesComponent },
-  { path: 'contact', component: ContactComponent },
   { path: '', component: HomeComponent },
-  // Add other routes for different sections/pages of your website
+  { path: 'contact', loadChildren: () => import('src/app/contact/contact.module').then((m) => m.ContactModule) },
+  { path: 'blog', loadChildren: () => import('src/app/blog/blog.module').then((m) => m.BlogModule) },
+  { path: 'home', loadChildren: () => import('src/app/home/home.module').then((m) => m.HomeModule) },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

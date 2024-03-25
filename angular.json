@@ -35,7 +35,6 @@
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
-            
           },
           "configurations": {
             "production": {
@@ -100,11 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "7236825d-4276-4e32-ae0c-5eb53cab49ab"
+    "analytics": "7236825d-4276-4e32-ae0c-5eb53cab49ab",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
